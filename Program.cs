@@ -11,11 +11,11 @@ class Program
             "web-api-help-pages-using-swagger/samples/3.0/TodoApi.Swashbuckle/" +
             "readme.md?plain=1#L53";
 
-        if (args.Length != 1)  // test case
+        if (args.Length != 1)       // test case
             Console.WriteLine("Usage: UpdateGitHubUrl <github_url>");
-        else if (args.Length == 1) // default is most of our URL need the live branch
+        else if (args.Length == 1) // default is most of our URLs need the live branch
             permUrl = args[0];
-        else                      // for repo's with main, we need main.
+        else                       // for repo's with main, we need main.
         {
             permUrl = args[0];
             tree = "/tree/main/";
